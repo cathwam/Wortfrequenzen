@@ -1,5 +1,3 @@
-// Aufgabe 1
-// Loris Wilwert, Raphael Julien Ebner, Catherine Wampach
 
 #include "frequencysource.hh"
 #include <map>
@@ -12,7 +10,7 @@
 #include <memory>
 
 
-/* --------------- Punkt a) --------------- */
+
 template <typename Map>
 class LetterFrequencies {
     public:
@@ -45,7 +43,6 @@ class LetterFrequencies {
 };
 
 
-/* --------------- Punkt c) --------------- */
 template<typename Map>
 class AnalysisPlugin {
     public:
@@ -97,14 +94,13 @@ class PrintTotalCount : public AnalysisPlugin<Map> {
 };
 
 
-/* --------------- Punkt b) --------------- */
 template <typename Map, typename Filter>
 class Frequencies {
     public:
         // Constructor
         Frequencies(Filter& filter) : _filter(filter) {}
 
-        /* --------------- Punkt d) --------------- */
+
         // abstract Plugin base type
         using Plugin = AnalysisPlugin<Map>;
 
